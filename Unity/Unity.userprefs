@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpriteControllers\SpriteHandler.cs">
+    <Files>
+      <File FileName="..\..\BoostAR2\Unity\Assets\Ad-Dispatch\Scenes\Dynamic\Experiences\Branded\Disney\Accessories2D\AccessorizeCinderella\Scripts\CinderellaDressUpController.cs" Line="32" Column="17" />
+      <File FileName="..\..\2DGameplayTutorialProject\Assets\Scripts\2D\Character Controls\PlatformerController.js" Line="8" Column="35" />
+      <File FileName="..\..\BoostAR2\Unity\Assets\Ad-Dispatch\Scenes\Dynamic\Experiences\Branded\Disney\Animation\TinkerbellFortune\Scripts\TinkerbellFortuneController.cs" Line="82" Column="27" />
+      <File FileName="..\..\BoostAR2\Unity\Assets\Ad-Dispatch\Scenes\Dynamic\Experiences\Branded\Disney\Animation\PhineasRollerCoaster\Scripts\FollowCamController.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\SpriteControllers\SpriteHandler.cs" Line="173" Column="4" />
+      <File FileName="Assets\Scripts\SpriteControllers\FrameHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
