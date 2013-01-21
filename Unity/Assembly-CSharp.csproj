@@ -44,19 +44,24 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\FollowCameraController.cs" />
-     <Compile Include="Assets\Scripts\MovementController.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\RenderQueueController.cs" />
-     <Compile Include="Assets\Scripts\SpriteControllers\FrameData.cs" />
-     <Compile Include="Assets\Scripts\SpriteControllers\FrameHandler.cs" />
-     <Compile Include="Assets\Scripts\SpriteControllers\SpriteHandler.cs" />
-     <Compile Include="Assets\Scripts\SpriteControllers\TestAnimationController.cs" />
-     <Compile Include="Assets\Sprites\Ward\WardSpriteHandler.cs" />
+     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\GridCreator.cs" />
+     <Compile Include="Assets\Scripts\SwipeController.cs" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
+     <None Include="Assets\Shaders\DepthMaskLate.shader" />
+     <None Include="Assets\Shaders\DepthMaskEarly.shader" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Semi-Alpha.shader" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
-     <None Include="Assets\Sprites\Ward\ward_sprites_1.txt" />
+ <Reference Include="MySql.Data">
+ <HintPath>Assets\Plugins\MySql.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>Assets\Plugins\System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>Assets\Plugins\System.Drawing.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">

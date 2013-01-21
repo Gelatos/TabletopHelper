@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Plugins\MiniJSON.cs" />
+     <Compile Include="Assets\Plugins\MySQLCS.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\BaseElements\IPositionable.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\BaseElements\ITouchable.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\BaseElements\UIAbstractContainer.cs" />
@@ -57,6 +58,7 @@
      <Compile Include="Assets\Plugins\UIToolkit\BaseElements\UISpriteManager.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\BaseElements\UITouchableSprite.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\Containers\UIAbsoluteLayout.cs" />
+     <Compile Include="Assets\Plugins\UIToolkit\Containers\UIAbsoluteTouchableLayout.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\Containers\UIBackgroundLayout.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\Containers\UIHorizontalLayout.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\Containers\UIScrollableHorizontalLayout.cs" />
@@ -67,6 +69,7 @@
      <Compile Include="Assets\Plugins\UIToolkit\Structs\UIClippingPlane.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\Structs\UIEdgeInsets.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\Structs\UIEdgeOffsets.cs" />
+     <Compile Include="Assets\Plugins\UIToolkit\Structs\UIFakeTouch.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\Structs\UITouchMaker.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\Structs\UIUVRect.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\Structs\UIVertexIndices.cs" />
@@ -96,9 +99,20 @@
      <Compile Include="Assets\Plugins\UIToolkit\UIElements\UIZoomButton.cs" />
      <Compile Include="Assets\Plugins\UIToolkit\UIToolkit.cs" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
+     <None Include="Assets\Shaders\DepthMaskLate.shader" />
+     <None Include="Assets\Shaders\DepthMaskEarly.shader" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Semi-Alpha.shader" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
-     <None Include="Assets\Sprites\Ward\ward_sprites_1.txt" />
+ <Reference Include="MySql.Data">
+ <HintPath>Assets\Plugins\MySql.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>Assets\Plugins\System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>Assets\Plugins\System.Drawing.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
