@@ -37,25 +37,36 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>/Applications/Unity 4/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>/Applications/Unity 4/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\MySQLJS.js" />
+     <Compile Include="Assets\FingerGestures\Samples\Scripts\PickObject.js" />
+     <Compile Include="Assets\FingerGestures\Samples\Scripts\TapToPickObject.js" />
+     <Compile Include="Assets\FingerGestures\SkeletonCode\JavascriptSkeleton.js" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
+     <None Include="Assets\Readme.txt" />
      <None Include="Assets\Shaders\DepthMaskLate.shader" />
      <None Include="Assets\Shaders\DepthMaskEarly.shader" />
- <Reference Include="MySql.Data">
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Semi-Alpha.shader" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
+ <Reference Include="Assets\Plugins\MySql.Data">
  <HintPath>Assets\Plugins\MySql.Data.dll</HintPath>
  </Reference>
- <Reference Include="System.Data">
+ <Reference Include="Assets\Plugins\System.Data">
  <HintPath>Assets\Plugins\System.Data.dll</HintPath>
  </Reference>
- <Reference Include="System.Drawing">
+ <Reference Include="Assets\Plugins\System.Drawing">
  <HintPath>Assets\Plugins\System.Drawing.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{2662B409-6332-1E56-D797-C9025C53BDD6}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

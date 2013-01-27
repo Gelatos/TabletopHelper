@@ -8,11 +8,7 @@ public class GridCreator : MonoBehaviour
 	[SerializeField]
 	private Transform squarePrefab;
 	[SerializeField]
-	private Transform maskPrefab;
-	[SerializeField]
 	private Transform linePrefab;
-	[SerializeField]
-	private Material maskMaterial;
 	
 	// holds the dimensions for the grid
 	public int gridX;
@@ -39,6 +35,9 @@ public class GridCreator : MonoBehaviour
 	#region GRID_FUNCTIONS
 	public void CreateGrid ()
 	{
+		// first destroy all the children before creating a new grid
+		DestroyAllChildren ();
+		
 		// create a grid icon for each location on the grid
 		for (int x = 0; x < gridX; x++) {
 			// create the column
@@ -59,12 +58,6 @@ public class GridCreator : MonoBehaviour
 				square.name = "Square (" + x + ", " + y + ")";
 				square.parent = backgroundColumn.transform;
 				square.localPosition = new Vector3 ((float)x, (float)y, 0.0F);
-				
-				// create the square mask
-				Transform squareMask = (Transform)Instantiate (maskPrefab);
-				squareMask.name = "Square (" + x + ", " + y + ")";
-				squareMask.parent = backgroundColumn.transform;
-				squareMask.localPosition = new Vector3 ((float)x, (float)y, -0.5F);
 				
 				// create the horizontal line
 				Transform lineHorizontal = (Transform)Instantiate (linePrefab);

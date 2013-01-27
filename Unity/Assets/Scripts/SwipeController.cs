@@ -27,6 +27,16 @@ public class SwipeController : MonoBehaviour
 	private float xMinimumPercentageMovedToRegisterSwipe = 0.1F;
 	[SerializeField]
 	private float yMinimumPercentageMovedToRegisterSwipe = 0.1F;
+	[SerializeField]
+	private float xMinimumPercentageMovedToRegisterPowerIncrease = 0.15F;
+	[SerializeField]
+	private float yMinimumPercentageMovedToRegisterPowerIncrease = 0.15F;
+	[SerializeField]
+	private int xMaximumPowerIncrease = 5;
+	[SerializeField]
+	private int yMaximumPowerIncrease = 5;
+	public int xPowerDegree;
+	public int yPowerDegree;
 
 	// user options
 	public enum MovementCheck
@@ -97,6 +107,21 @@ public class SwipeController : MonoBehaviour
 			} else if (yPositionMoved < -1.0F) {
 				yPositionMoved = -1.0F;
 			}
+				
+			// determine how much power the swipe has
+			xPowerDegree = (int)(Mathf.Abs(xPositionMoved) / xMinimumPercentageMovedToRegisterPowerIncrease);
+			if (xPowerDegree > xMaximumPowerIncrease) {
+				xPowerDegree = xMaximumPowerIncrease;
+			} else if (xPowerDegree < 1) {
+				xPowerDegree = 1;
+			}
+			yPowerDegree = (int)(Mathf.Abs(yPositionMoved) / yMinimumPercentageMovedToRegisterPowerIncrease);
+			if (yPowerDegree > yMaximumPowerIncrease) {
+				yPowerDegree = yMaximumPowerIncrease;
+			} else if (xPowerDegree < 1) {
+				yPowerDegree = 1;
+			}
+				
 
 			// determine if there was horizontal movement
 			if (checkForTheFollowingMovementType != MovementCheck.ONLY_VERTICAL_MOVEMENT) {
@@ -131,8 +156,10 @@ public class SwipeController : MonoBehaviour
 						if (checkForTheFollowingMovementType == MovementCheck.ALL_MOVEMENT) {
 							if (swipeDirection == FingerSwipeDirection.LEFT) {
 								swipeDirection = FingerSwipeDirection.DOWN_LEFT;
+								return;
 							} else if (swipeDirection == FingerSwipeDirection.RIGHT) {
 								swipeDirection = FingerSwipeDirection.DOWN_RIGHT;
+								return;
 							}
 						}
 						swipeDirection = FingerSwipeDirection.DOWN;

@@ -37,10 +37,10 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>/Applications/Unity 4/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>/Applications/Unity 4/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -53,13 +53,13 @@
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Semi-Alpha.shader" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
- <Reference Include="MySql.Data">
+ <Reference Include="Assets\Plugins\MySql.Data">
  <HintPath>Assets\Plugins\MySql.Data.dll</HintPath>
  </Reference>
- <Reference Include="System.Data">
+ <Reference Include="Assets\Plugins\System.Data">
  <HintPath>Assets\Plugins\System.Data.dll</HintPath>
  </Reference>
- <Reference Include="System.Drawing">
+ <Reference Include="Assets\Plugins\System.Drawing">
  <HintPath>Assets\Plugins\System.Drawing.dll</HintPath>
  </Reference>
   </ItemGroup>
