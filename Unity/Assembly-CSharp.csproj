@@ -47,12 +47,8 @@
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\GridCreator.cs" />
      <Compile Include="Assets\Scripts\SwipeController.cs" />
-     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
      <None Include="Assets\Shaders\DepthMaskLate.shader" />
      <None Include="Assets\Shaders\DepthMaskEarly.shader" />
-     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
-     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Semi-Alpha.shader" />
-     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
  <Reference Include="MySql.Data">
  <HintPath>Assets\Plugins\MySql.Data.dll</HintPath>
  </Reference>
@@ -62,10 +58,6 @@
  <Reference Include="System.Drawing">
  <HintPath>Assets\Plugins\System.Drawing.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{2662B409-6332-1E56-D797-C9025C53BDD6}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
